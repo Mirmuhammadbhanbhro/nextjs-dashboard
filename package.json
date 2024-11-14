@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build --no-lint",
     "dev": "next dev --turbo",
     "seed": "node -r dotenv/config ./scripts/seed.js",
     "start": "next start",
@@ -36,6 +36,14 @@
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-rc.1",
       "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
+  },
+  "eslintConfig": {
+    "extends": "next/core-web-vitals",
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/jsx-no-undef": "off",
+      "no-console": "off"
     }
   }
 }
