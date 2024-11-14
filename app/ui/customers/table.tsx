@@ -5,6 +5,10 @@ import {
   CustomersTableType,
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const styles = {
+  // style definitions
+};
 
 export default async function CustomersTable({
   customers,
