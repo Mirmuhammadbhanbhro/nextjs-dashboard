@@ -1,3 +1,5 @@
+'use client';
+
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
@@ -26,7 +28,7 @@ export function UpdateInvoice({ id }: { id: string }) {
 
 export function DeleteInvoice({ id }: { id: string }) {
   const handleDelete = () => {
-    // You can handle the delete logic here
+    // Add the delete logic here (API call, etc.)
     console.log(`Deleting invoice with id: ${id}`);
   };
 
